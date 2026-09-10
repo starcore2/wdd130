@@ -36,3 +36,14 @@ Use proper heading levels so screen readers don't break
 Is a list of items 
 
 </u1>
+
+html and css files should be seperate. 
+<link =rel="stylesheet" href="styles.css"> is the methood to acess them from a html file. Which is powerful because you can just change a lot of many pages with just one style sheet.
+CSS rules are you select the thing to change. The next is a decleration block {} 
+for example 
+h1{
+    background-color: darkblue; #Declare that the element of h1 will have a dark blue background with a white text and padding of 16px. Will be in the center.
+    color: white;
+    padding: 16px;
+    text-align:Center;
+}
