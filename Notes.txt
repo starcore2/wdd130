@@ -68,3 +68,13 @@ The box model job is to make things look nice without it being a tight squeeze.
 
 long hand notation is for very specific situations but in general you want short hand.
 
+HTML elements by default are either block-level or inline element. 
+block level occupy full width of their container and start on new lines while inline only take the space for the content and does not start on a new line.
+
+You can change this with CSS. Display modifies to either inline or block. Blocks are selfish and do not share while inline does not care.
+inline-block is a special case of they can share but they have a bubble they want to keep. So I guess you could make a very big text that pushes other words away.
+
+span, a, label, button, input, and cite are inline elements.
+header, div, table, form, aside, p are block level. How to tell? 
+https://htmlreference.io/
+will help explain what elements are.
