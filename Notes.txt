@@ -47,3 +47,24 @@ h1{
     padding: 16px;
     text-align:Center;
 }
+
+CSS has two types of values. Absolute and Relative
+Absolute is telling that the item is a set size. Larger on smaller screens and smaller on bigger screens.
+relative are 50% based on other items such as the parent, sibling, or the viewport.
+px is pixels
+em is relative
+% is percentage of a item
+https://www.w3schools.com/Css/ 
+for all of your CSS needs
+how to color with CSS
+Keyword
+hexadecimal RGB #Faebd7 
+RGB or RGBA rgb(250, 250, 50), rgb(50, 0, 255, /.5)
+HSLA hsla(34,78%,91%,1)
+The most common absolute is pixels
+rem is based on the font size of the root
+
+The box model job is to make things look nice without it being a tight squeeze.
+
+long hand notation is for very specific situations but in general you want short hand.
+
