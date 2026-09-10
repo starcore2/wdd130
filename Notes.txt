@@ -1,0 +1,38 @@
+don't forget !doctype
+use <html5> when making a new html file
+head is for upper info
+contains title, formatting, and more info to tell browser what do
+
+body is for the main content
+contains many things but mostly things to control flow.
+semantic tags describe meaning and purpose. 
+header contains introductory content or nav links
+nav contains navigation links to other pages/sections
+main is main content of the pages section is a distinct section of content
+article is independent content
+aside is related but separate from main content
+footer contains closing info like contact or copyright
+h1,h2,h3,h4,h5,h6 are different levels of headings
+
+non sematic do not provide information about meaning of their content. their job is styling and layout purpose.
+div is for grouping a large section of a page to stylize
+<div class="fish">
+span stylize a section of content.
+<p> yada <span class="egg"> dada </span> bada </p>
+
+semantic tags are best in general case.
+
+non semantic tags are for stylizing things.
+
+h1-main title, use only one per page.
+h2-major section headings that divide in to main parts
+h3-even smaller parts of h2.
+h4-minor headings for h3
+h5-very specific headings
+h6- smallest only used if you really need detailed organization.
+Use proper heading levels so screen readers don't break
+
+<u1>
+Is a list of items 
+
+</u1>
