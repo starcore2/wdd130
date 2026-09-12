@@ -57,3 +57,7 @@ footer {
     border-top: 1px solid black;
     text-align: center;
 }
+
+p {
+    padding: 0px;
+}
