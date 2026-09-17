@@ -1,7 +1,13 @@
+:root {
+    /* --variable: value; */
+
+}
+
 body {
     background-color: rgb(200, 200, 200);
 }
 
+/* This is a comment. You can use control / to comment code */
 nav {
     background-color: darkblue;
     padding: 10px;
