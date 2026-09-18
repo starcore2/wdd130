@@ -1,26 +1,39 @@
 :root {
     /* --variable: value; */
+    /* to grab variable use 
+    value: var(--variable);
+    it acts like the value so very helpful 
+     */
+    --normal-background-color: rgb(0, 107, 194);
+    --normal-text-color: white;
+    --link-color: rgb(249, 255, 162);
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(200, 200, 200);
+    /* pure white is evil to the eyes most of the time */
 }
 
 /* This is a comment. You can use control / to comment code */
 nav {
-    background-color: darkblue;
+    background-color: var(--normal-background-color);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--link-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--normal-background-color);
 }
 
 main img {
@@ -29,6 +42,7 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -40,12 +54,8 @@ main {
 }
 
 aside {
-    width: 300px;
-    margin: 20px;
-    border: 1px solid black;
-    padding: 20px;
-    background-color: rgb(0, 115, 207);
-    color: white;
+    position: relative;
+    width: 600px;
     font-size: larger;
     text-align: center;
 
@@ -63,3 +73,30 @@ footer {
     border-top: 1px solid black;
     text-align: center;
 }
+
+main ul {
+    clear: both;
+}
+
+ul a {
+    color: var(--link-color);
+}
+
+aside h2 {
+    font-size: small;
+    position: absolute;
+    bottom: 150px;
+    left: 300px;
+    color: black;
+}
+
+/* Class Selectors */
+.box {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--normal-background-color);
+    color: var(--normal-text-color);
+}
+
+/* Id Selectors */
