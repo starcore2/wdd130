@@ -1,11 +1,11 @@
 :root {
     --primary-color: rgb(22, 24, 36);
-    --secondary-color: red;
-    /*  */
+    /* --secondary-color: red; */
+    /*  Not Used yet still needs a better color*/
     --accent1-color: rgb(94, 94, 192);
     /*Light blue*/
     --accent2-color: rgb(187, 255, 187);
-    /*Light Green*/
+    /*Light Green. Still not used yet. color seems fine*/
     --heading-font: "Times New Roman", serif;
     --body-font: "Arial", sans-serif;
 }
@@ -13,7 +13,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 /* set up */
