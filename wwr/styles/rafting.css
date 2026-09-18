@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(22, 24, 36);
-    /* --secondary-color: red; */
+    --secondary-color: rgb(48, 43, 43);
     /*  Not Used yet still needs a better color*/
     --accent1-color: rgb(94, 94, 192);
     /*Light blue*/
@@ -71,9 +71,20 @@ h1 {
     color: white;
 }
 
+.hero article {
+    position: absolute;
+    top: 60px;
+    max-width: 350px;
+    right: -10px;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+    opacity: .9;
+
+}
+
 .hero article img {
     float: right;
-    width: 200px;
+    width: 125px;
 }
 
 footer img {
