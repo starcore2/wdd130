@@ -78,3 +78,38 @@ span, a, label, button, input, and cite are inline elements.
 header, div, table, form, aside, p are block level. How to tell? 
 https://htmlreference.io/
 will help explain what elements are.
+
+flex controls.
+justify-content controls horizontal alignment and spacing
+align-items controls vertical alignment.
+flex direction controls flex flow. 123 to 321 or vertically.
+row, row-reverse, column, or column-reverse
+are selectors to pick flow direction.
+when flex direction changes to column the justify and align swap roles.
+
+order gives the flex item a order to go to.
+align-self modifies it's own location.
+methods to select flex flow.
+flex-start
+flex-end
+center
+space between
+space around
+space evenly
+
+flex-wrap
+nowrap
+wrap
+wrap-reverse
+
+flex-flow is a short hand for flex-direction and flex-wrap combined 
+start with direction flow then wrap type.
+
+align-content
+controls vertical spacing
+flex-start: Lines are packed at the top of the container.
+flex-end: Lines are packed at the bottom of the container.
+center: Lines are packed at the vertical center of the container.
+space-between: Lines display with equal spacing between them.
+space-around: Lines display with equal spacing around them.
+stretch: Lines are stretched to fit the container.
