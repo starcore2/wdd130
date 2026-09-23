@@ -198,3 +198,4 @@ flex is best for speed, simple layouts, and dynamic content.
 
 grids are stronger for complex structures with fixed sized layouts and overlaping items.
 
+place-items: is how to place items with grid
