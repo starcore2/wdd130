@@ -192,3 +192,9 @@ span still works
 grid-template is a shorthand starting with rows / then columns
 
 
+Flex Vs grids
+
+flex is best for speed, simple layouts, and dynamic content.
+
+grids are stronger for complex structures with fixed sized layouts and overlaping items.
+
