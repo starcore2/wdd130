@@ -33,10 +33,6 @@ footer {
     background-color: var(--background-color-box);
 }
 
-header {
-    margin-bottom: 16px;
-}
-
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -103,6 +99,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 3fr;
     place-items: center;
+    margin-bottom: 16px;
 }
 
 nav ul {
@@ -183,7 +180,6 @@ figcaption {
     color: white;
     width: 100%;
     text-align: center;
-    opacity: 5;
     position: absolute;
     bottom: 1px;
     opacity: .75;
@@ -192,8 +188,6 @@ figcaption {
 
 footer {
     margin-top: 16px;
-    position: relative;
-    bottom: 0px;
 }
 
 .footer {
