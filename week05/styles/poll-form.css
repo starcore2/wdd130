@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    justify-self: center;
+}
+
+head {
+    display: block;
+    font-size: 5em;
+}
+
+body {
+    font-family: Merriweather, Georgia, serif;
+    font-size: 1.2em;
+    color: darkblue;
+    background-color: lightgrey;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}

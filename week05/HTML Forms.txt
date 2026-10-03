@@ -1,0 +1,50 @@
+Overview
+
+HTML forms allow us to interact with users and collect data. 
+The form element is a container for all form elements and includes attributes that enable data processing. 
+In this activity, you will focus only on frontend design and development, learning how to build a form using basic form elements. 
+Processing form data after submission is beyond the scope of this course.
+
+
+Basic Form Structure
+
+Every HTML form starts with a <form> tag and ends with a </form> tag. 
+All form elements must be placed between these tags. 
+The <form> tag tells the browser that everything inside is part of the same form.
+
+The most important parts of a form include:
+
+    Form container – The <form> element that holds all form parts
+    Form fields – Where users type or select information
+    Labels – Text that describes the purpose of each form field
+    Submit button – What users click to send their information
+
+
+Common Form Field Elements
+
+HTML provides several different types of form field elements to collect different kinds of information from users. Each element serves a specific purpose and appears differently on the webpage.
+
+The most commonly used form elements include:
+
+    Text input – For single lines of text like names or email addresses
+    Password input – For secret information that should be hidden
+    Textarea – For longer text like comments or messages
+    Checkbox – For yes/no choices or multiple selections
+    Radio buttons – For choosing one option from several choices
+    Select dropdown – For choosing from a list of options
+
+
+Input Attributes
+
+Input elements use attributes to control how they behave and process user input. Understanding these attributes helps you create forms that work correctly and provide a good user experience.
+
+Important input attributes include:
+
+    type – Defines the kind of input (text, email, password, etc.)
+    name – A unique identifier for each form element
+    id – Another identifier used to connect labels to inputs
+    required – Makes a field mandatory to fill out
+    placeholder – Shows example text inside an input field
+    value – Sets a default value for the input field
+
+

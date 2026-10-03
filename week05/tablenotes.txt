@@ -1,0 +1,50 @@
+Basic Table Structure
+
+The following are the elements you use to create a table:
+
+    <table> – Creates the container for the entire table
+    <tr> – Creates a table row (tr stands for "table row")
+    <td> – Creates a table cell for data (td stands for "table data")
+    <th> – Creates a header cell (th stands for "table header")
+
+Adding Table Sections
+
+For larger tables, you can organize content using three optional sections. These sections help assistive technologies like screen readers understand your table structure and make your code easier to maintain:
+
+    <thead> – Contains the table header rows
+    <tbody> – Contains the main table data rows
+    <tfoot> – Contains footer rows (like totals or summaries)
+
+Using Colspan
+
+When you want a cell to span across multiple columns, use the colspan attribute. The number you specify tells the browser how many columns the cell should cover.
+
+    colspan="2" – The cell spans across 2 columns
+    colspan="3" – The cell spans across 3 columns
+    You can use any number based on how many columns your table has
+
+Using Rowspan
+
+When you want a cell to span across multiple rows, use the rowspan attribute. This makes the cell taller by covering multiple rows vertically.
+
+    rowspan="2" – The cell spans down across 2 rows
+    rowspan="3" – The cell spans down across 3 rows
+    The cell will extend downward to cover the specified number of rows
+
+to use a span, 
+
+<td rowspan/colspan = "1336"> content </td>
+
+Important Notes About Spanning
+
+When you use colspan or rowspan, remember that you need fewer cells in the affected rows or columns. If a cell spans 2 columns, you need one less <td> in that row. If a cell spans 2 rows, you need one less <td> in the next row.
+
+Always plan your table structure carefully before adding spans to make sure all rows and columns line up correctly.
+
+When to Use Tables
+
+Tables should only be used for displaying tabular data that naturally fits in rows and columns. 
+Never use tables to create page layouts or position elements on your webpage. 
+Modern CSS layout techniques (such as Flexbox and Grid) are the proper tools for page layout.
+
+

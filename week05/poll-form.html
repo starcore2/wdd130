@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form action="">
+            <label for="Fullname">Full Name:<input type="text" id="fullname" name="fullname"
+                  required></label>
+
+            <label for="email">Email:<input type="text" id="email" name="email" required></label>
+
+            <!-- 
+        You can also put the input between the label if you want to do it differently
+        
+        -->
+            <label for="Favoritebrowser">Favorite Browser:</label>
+            <select name="Favoritebrowser" id="Favoritebrowser">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+                <option value="brave">Brave</option>
+                <option value="edge">Edge</option>
+            </select>
+            <label for="pet">Do you have a household Pet?<input type="checkbox" name="pet"
+                  id="pet"></label>
+
+            <label for="feedback">List the places you have lived</label>
+            <textarea name="feedback" id="feedback" rows="4"
+              placeholder="Oklahoma, Oklahoma City, Oklahoma city city ciyt ciyt cyity"></textarea>
+            <button type="submit">Submit Poll</button>
+            <label for="egg"> <input type="radio" name="egg" id="egg" value="egg">egg</label>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>

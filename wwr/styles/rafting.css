@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border-spacing: 0;
 }
 
 /* set up */
@@ -28,7 +29,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: var(--background-color-box);
 }
@@ -40,8 +41,7 @@ h2 {
 }
 
 nav,
-p,
-section,
+
 article {
     margin: 16px;
     padding: 8px;
@@ -63,13 +63,17 @@ article {
 }
 
 h1 {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 8px 0;
+}
+
+.heroh1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding-bottom: 8px;
-    padding-top: 8px;
     text-align: center;
-    opacity: .7;
+    opacity: .9;
     background-color: var(--accent1-color);
     color: white;
 }
@@ -152,6 +156,7 @@ header img {
     grid-template-columns: repeat(5, 1fr);
     margin: 0;
     padding: 0;
+    padding-bottom: 8px;
     place-items: center;
     place-content: center;
 }
@@ -205,4 +210,85 @@ footer nav {
     flex-direction: row;
     flex-wrap: nowrap;
     place-self: end;
+}
+
+/* This section is for contact us form css */
+
+.contact {
+    text-align: center;
+
+}
+
+.contact p {
+    font-weight: 600;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 420px;
+    row-gap: 10px;
+    padding: 16px;
+}
+
+.messagepurpose {
+    grid-row: span 3;
+
+}
+
+.message {
+    grid-column: span 2;
+}
+
+textarea {
+    height: 150px;
+}
+
+.locateform {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+
+.subscribe {
+    grid-column: span 2;
+}
+
+.submit {
+    grid-column: span 2;
+    height: 40px;
+    font-weight: bolder;
+}
+
+.serving {
+    text-align: center;
+    border: 5px solid black;
+    padding: 8px;
+    margin: 16px 0;
+
+}
+
+.serving img {
+    max-height: 200px;
+    width: auto;
+}
+
+.serving div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: var(--background-color-base);
+    color: black;
+    border: 1px solid black;
+}
+
+/* Found the Hover option To really make sure the button feels clickable. 
+Only thing I'm missing is making the cursor point at it. */
+button:hover {
+    background-color: var(--accent1-color);
+    color: white;
+    border: 1px solid var(--background-color-base);
 }
