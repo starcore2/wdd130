@@ -39,6 +39,10 @@ footer {
     background-color: var(--background-color-box);
 }
 
+main {
+    padding-bottom: 8px;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -349,7 +353,6 @@ td {
     text-align: center;
     display: flex;
     justify-content: space-between;
-
 }
 
 .flowdown {
@@ -381,7 +384,27 @@ td {
 }
 
 .newsletter {
-    display: flex;
-    flex-flow: column, wrap;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
+.newsletter * {
+    padding: 16px 64px;
+    margin: 4px;
+}
+
+.formheading {
+    grid-column: span 2;
+}
+
+.contactaling {
+    text-align: end;
+    justify-self: end;
+
+}
+
+.contactaling .calltoaction a {
+    padding: 16px;
+    margin: 16px;
+    margin-right: 32px;
 }
