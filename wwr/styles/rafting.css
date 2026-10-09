@@ -4,7 +4,7 @@
     /*  Not Used yet still needs a better color*/
     --accent1-color: rgb(29, 29, 202);
     /*Light blue*/
-    --accent2-color: rgb(187, 255, 187);
+    --accent2-color: rgb(224, 255, 224);
     /*Light Green. Still not used yet. color seems fine*/
     --heading-font: "Times New Roman", serif;
     --body-font: "Arial", sans-serif;
@@ -17,6 +17,11 @@
     padding: 0;
     box-sizing: border-box;
     border-spacing: 0;
+    border-collapse: collapse;
+}
+
+a {
+    background-color: var(--accent2-color);
 }
 
 /* set up */
@@ -151,14 +156,30 @@ header img {
     margin: 1px;
 }
 
-.adventure {
+.adventure,
+.information {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     margin: 0;
     padding: 0;
     padding-bottom: 8px;
     place-items: center;
     place-content: center;
+}
+
+.adventure {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.information {
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.information,
+.tripstotake {
+    background-color: var(--accent2-color);
+    border: 1px solid black;
+    margin: 16px;
 }
 
 .adventureH2 {
@@ -186,13 +207,18 @@ figcaption {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 1px;
+    bottom: 8px;
     opacity: .75;
     background-color: black;
 }
 
 footer {
     margin-top: 16px;
+
+}
+
+footer * {
+    background-color: var(--background-color-box);
 }
 
 .footer {
@@ -256,8 +282,7 @@ textarea {
 
 .submit {
     grid-column: span 2;
-    height: 40px;
-    font-weight: bolder;
+
 }
 
 .serving {
@@ -283,6 +308,9 @@ button {
     background-color: var(--background-color-base);
     color: black;
     border: 1px solid black;
+    height: 40px;
+    font-weight: bolder;
+    padding: 0px 16px;
 }
 
 /* Found the Hover option To really make sure the button feels clickable. 
@@ -291,4 +319,69 @@ button:hover {
     background-color: var(--accent1-color);
     color: white;
     border: 1px solid var(--background-color-base);
+}
+
+a:hover {
+    background-color: var(--accent1-color);
+    color: white;
+    border: 1px solid var(--background-color-base);
+}
+
+form {
+    border: 5px solid var(--accent2-color);
+}
+
+table {
+    border: 3px solid black
+}
+
+thead {
+    background-color: var(--background-color-base);
+    border: solid black;
+}
+
+td {
+    border: 2px solid black;
+    padding: 4px;
+}
+
+.calltoaction {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.flowdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flowdown a {
+    padding: 8px;
+}
+
+.calltoaction a {
+    font-size: larger;
+}
+
+.aboutsite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.aboutsite p {
+    max-width: 200px;
+}
+
+.aboutsite * {
+    padding: 16px;
+}
+
+.newsletter {
+    display: flex;
+    flex-flow: column, wrap;
+
 }
